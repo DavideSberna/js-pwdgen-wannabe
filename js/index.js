@@ -24,9 +24,10 @@ let titleBody = document.getElementById("text-title").innerHTML = "La tua nuova 
 
 // create algorithm for a correct output
 if(isNaN(nome) && isNaN(cognome) && isNaN(colore) && parseInt(eta)) {
-    createPassword.innerHTML = `Password: ${password}`;
+    createPassword.innerHTML = `Password:<span class="italic"> ${password}</span>`;
 } else {
     createPassword.innerText = "I campi non sono stati correttamente compilati";
+    textInput.style.display = "none";
 }
 
 
