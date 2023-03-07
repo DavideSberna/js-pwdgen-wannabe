@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;;
+        }
+        .container{
+            background-color: rgb(45, 45, 45);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            width: 600px;
+            height: 350px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px 10px rgb(24, 24, 24);
+        }
+        .list-style{
+            list-style: none;
+
+        }
+        .italic{
+            font-style: italic;
+            font-weight: 400;
+        }
+        .p-30{
+            padding: 30px;
+        }
+        .mb-5{
+            margin-bottom: 5px;
+        }
+        .mb-10{
+            margin-bottom: 10px;
+        }
+        .mb-20{
+            margin-bottom: 20px;
+        }
+        .mb-40{
+            margin-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="p-30">
+                <h1 id="text-title" class="mb-10"></h1>
+                <p id="text-body"></p>
+            </div>
+            <div class="p-30">
+                <h3 id="text-h3" class="mb-20"></h3>
+                <ul id="text-input"></ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
