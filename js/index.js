@@ -16,11 +16,15 @@ let eta = prompt("inserisci la tua età");
 const password = `${nome}${cognome}${colore}${eta}`;
 
 
+
+
+
 // take document element by id "text-body" 
 let createPassword = document.getElementById("text-body")
 
 // take document element by id "text-title" 
 let titleBody = document.getElementById("text-title").innerHTML = "La tua nuova password è:";
+
 
 // create algorithm for a correct output
 if(isNaN(nome) && isNaN(cognome) && isNaN(colore) && parseInt(eta)) {
@@ -30,8 +34,6 @@ if(isNaN(nome) && isNaN(cognome) && isNaN(colore) && parseInt(eta)) {
     textInput.style.display = "none";
 }
 
-
-
 let textH = document.getElementById("text-h3").innerHTML = "I tuoi dati:";
 let textInput = document.getElementById("text-input").innerHTML = `<ul id="text-input" class="list-style">
 <li class="mb-5">Nome:<span class="italic"> ${nome}</span></li>
@@ -39,6 +41,12 @@ let textInput = document.getElementById("text-input").innerHTML = `<ul id="text-
 <li class="mb-5">Colore:<span class="italic"> ${colore}</span></li>
 <li class="mb-5">Età:<span class="italic"> ${eta}</span></li>
 </ul>`
+
+
+
+
+
+
 
 
 
