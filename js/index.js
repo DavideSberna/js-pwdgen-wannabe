@@ -26,21 +26,37 @@ let createPassword = document.getElementById("text-body")
 let titleBody = document.getElementById("text-title").innerHTML = "La tua nuova password è:";
 
 
-// create algorithm for a correct output
+
+let textH = document.getElementById("text-h3").innerHTML = "I tuoi dati:";
+let textInput = document.getElementById("text-input");
+let textli_1 = document.getElementById("li-1").innerHTML = `Nome: ${nome}`;
+let textli_2 = document.getElementById("li-2").innerHTML = `Cognome: ${cognome}`;
+let textli_3 = document.getElementById("li-3").innerHTML = `Colore: ${colore}`;
+let textli_4 = document.getElementById("li-4").innerHTML = `Età: ${eta}`;
+
 if(isNaN(nome) && isNaN(cognome) && isNaN(colore) && parseInt(eta)) {
     createPassword.innerHTML = `Password:<span class="italic"> ${password}</span>`;
 } else {
     createPassword.innerText = "I campi non sono stati correttamente compilati";
-    textInput.style.display = "none";
+    
+    if(!isNaN(nome)){
+        textli_1 = document.getElementById("li-1").innerText = "Nome: Hai inserito un valore non corretto";
+    }
+    if(!isNaN(cognome)){
+        textli_2 = document.getElementById("li-2").innerText = "Nome: Hai inserito un valore non corretto";
+    }
+    if(!isNaN(colore)){
+        textli_3 = document.getElementById("li-3").innerText = "Nome: Hai inserito un valore non corretto";
+    }
+    if(isNaN(eta)){
+        textli_4 = document.getElementById("li-4").innerText = "Nome: Hai inserito un valore non corretto";
+    }
 }
 
-let textH = document.getElementById("text-h3").innerHTML = "I tuoi dati:";
-let textInput = document.getElementById("text-input").innerHTML = `<ul id="text-input" class="list-style">
-<li class="mb-5">Nome:<span class="italic"> ${nome}</span></li>
-<li class="mb-5">Cognome:<span class="italic"> ${cognome}</span></li>
-<li class="mb-5">Colore:<span class="italic"> ${colore}</span></li>
-<li class="mb-5">Età:<span class="italic"> ${eta}</span></li>
-</ul>`
+
+
+
+
 
 
 
